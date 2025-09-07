@@ -1,0 +1,46 @@
+.wrapper{
+    width: 100%;
+    height: 104px;
+    background-color: #010409;
+    box-shadow: 0 6px 6px #3d444d;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.title {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #f78166;
+        transition: width .3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+.auth{
+    background-color: #3d444d;
+    padding: 10px 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+    
+    &:hover {
+        background-color: #f78166;
+
+    }
+}

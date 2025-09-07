@@ -1,0 +1,21 @@
+.wrapper{
+    background-color: #161618;
+    width: 202px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}   
+
+.content{
+    color: #a6a6a8;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &:hover{
+        color: #fff;
+        transform: translateX(4px);
+    }
+}
+
