@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 
 import DefaultLayout from "../../layouts/DefaultLayout";
 import AuthLayout from "../../layouts/AuthLayout";
@@ -15,9 +15,12 @@ import Dashboard from '../../pages/Dashboard'
 import Users from '../../pages/Users'
 import Settings from '../../pages/Settings'
 import NotFound from '../../pages/NotFound'
+import ScrollToTop from "../ScrollToTop";
 function AppRoutes() {
     return ( 
-        <Router>
+        <HashRouter>
+            <ScrollToTop />
+
             <Routes>
                 <Route element={<DefaultLayout/>}>
                     <Route index element ={<Home/>}/>
@@ -41,7 +44,7 @@ function AppRoutes() {
 
                 <Route path="*" element ={<NotFound/>}/>
             </Routes>
-        </Router>   
+        </HashRouter>   
      );
 }
 

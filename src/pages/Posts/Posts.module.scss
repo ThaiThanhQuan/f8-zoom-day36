@@ -1,0 +1,19 @@
+.wrapper{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-bottom: 10px;
+}
+.post{
+    list-style: none;
+    margin: 5px;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+}

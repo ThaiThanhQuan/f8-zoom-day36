@@ -10,7 +10,6 @@ function Header() {
                 <NavLink className={clsx(styles.title)} to= "/">Home</NavLink>
                 <NavLink className={clsx(styles.title)} to= "/about">About</NavLink>
                 <NavLink className={clsx(styles.title)} to= "/posts">Posts</NavLink>
-                <NavLink className={clsx(styles.title)} to= "/posts/:id">PostDetail</NavLink>
                 <NavLink className={clsx(styles.title)} to= "/contact">Contact</NavLink>
                 <NavLink className={clsx(styles.title)} to= "/privacy">Privacy</NavLink>
 

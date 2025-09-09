@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 
 import styles from './Footer.module.scss'
+import { NavLink } from 'react-router';
 
 function Footer() {
     return ( 
@@ -16,7 +17,7 @@ function Footer() {
         </div>
 
        <div className={clsx(styles.content)}>
-            <p className={clsx(styles.title)}>Services</p>
+            <NavLink className={clsx(styles.title)} to="/contact">Contacts</NavLink>
             <ul className={clsx(styles.minicontent)}>
                 <li className={clsx(styles.context)}>Web Development</li>
                 <li className={clsx(styles.context)}>Mobile Apps</li>
@@ -26,7 +27,7 @@ function Footer() {
         </div>
 
         <div className={clsx(styles.content)}>
-            <p className={clsx(styles.title)}>Contacts</p>
+            <NavLink className={clsx(styles.title)} to="/privacy">Privacy</NavLink>
             <ul className={clsx(styles.minicontent)}>
                 <li className={clsx(styles.context)}>Email</li>
                 <li className={clsx(styles.context)}>Phone</li>
